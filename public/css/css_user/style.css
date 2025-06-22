@@ -1,0 +1,495 @@
+
+
+/* Header Pendaftaran */
+.bg-gradient-card {
+    background: linear-gradient(to bottom, #f3f3f3, #b7e6cb) !important;
+    /* Putih ke hijau muda */
+    border: 1px solid #cce3d0;
+    border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
+
+/* Body Styling */
+body {
+    background: #f3f3f3 url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Custom */
+.navbar-custom {
+    background-color: #f3f3f3;
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 60px;
+}
+
+.navbar-custom .brand-text {
+    line-height: 1.1;
+}
+
+.navbar-custom .brand-text div:first-child {
+    color: rgb(29, 190, 56);
+    font-weight: bold;
+}
+
+.navbar-custom .brand-text div:last-child {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+    color: rgb(29, 190, 56) !important;
+    font-weight: bold;
+    padding: 0.5rem 12px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107 !important;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+/* Mengatur ukuran dan posisi carousel */
+#carouselExampleFade {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Menyesuaikan tinggi dengan tinggi viewport */
+}
+
+/* Mengatur gambar dalam carousel agar mengisi seluruh area */
+#carouselExampleFade .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Agar gambar tetap terpotong dengan baik */
+}
+
+/* Overlay gelap untuk memberikan kontras pada teks */
+.overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Menambahkan efek gelap */
+    z-index: 1;
+}
+
+/* Mengatur teks pada carousel caption */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Menambahkan bayangan pada teks untuk visibilitas */
+}
+
+/* Mengatur ukuran dan style judul */
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Mengatur ukuran dan style deskripsi */
+.carousel-caption p {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+/* Mengatur tombol pada carousel caption */
+.carousel-caption .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efek hover pada tombol */
+.carousel-caption .btn:hover {
+    background-color: #3528a7;
+    /* Menambahkan warna hijau pada hover */
+    color: white;
+}
+
+/* Responsive untuk tampilan mobile */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* end banner */
+
+/* Content */
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 80px auto 40px auto;
+    /* Atas 80px, bawah 40px */
+    max-width: 960px;
+    padding: 20px;
+}
+
+
+/* Card Styling */
+.card-1,
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+    padding-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Styling */
+.content {
+    background-color: #f0f9f4;
+    padding: 30px;
+    margin: 80px auto 40px auto;
+    /* Atas 80px, bawah 40px */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    width: 100%;
+}
+
+.content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .profile-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card,
+    .content {
+        flex: 1;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .content {
+        margin-left: 30px;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/* Card Box */
+.form-container {
+    padding: 20px;
+}
+
+label.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-check {
+    margin-right: 1rem;
+}
+
+.card.card-body a {
+    font-weight: bold;
+    color: #e7e9e8;
+}
+
+button[type="submit"] {
+    font-size: 16px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .col-md-6,
+    .col-md-3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-floating {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        padding: 12px;
+    }
+}
+
+/* Shortcut Menu PPDB */
+.card-ppdb {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.2s;
+    min-height: 65px;
+}
+
+.card-ppdb:hover {
+    transform: translateY(-3px);
+}
+
+.icon-section {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-section {
+    padding: 10px;
+    flex: 1;
+}
+
+.text-section .title {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 2px;
+    color: #333;
+}
+
+.text-section .link {
+    color: #0d6efd;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.text-section .link:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+    .card-ppdb {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon-section {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .text-section {
+        padding: 10px;
+    }
+}
+
+/* Shortcut Menu PPDB */
+
+/* Berita Terbaru Section */
+.berita-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.berita-card:hover .berita-img {
+    transform: scale(1.05);
+}
+
+.berita-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.berita-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* berita */
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #198754;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: #198754;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+footer .text-uppercase {
+    color: #14532d;
+    text-transform: uppercase;
+}
+
+footer .fab {
+    font-size: 20px;
+}
+
+footer .border-bottom {
+    border-color: #198754 !important;
+}
+
+footer .p-4 {
+    background-color: #e9f5ee;
+}
+
+footer .text-muted {
+    color: #14532d !important;
+}
+
+footer .bg-body-tertiary {
+    background-color: #f3f3f3 !important;
+}
+
+footer .fw-bold {
+    font-weight: 600;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Responsif iframe */
+.map-responsive iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/* Penyesuaian Responsif & Alignment */
+@media (max-width: 768px) {
+
+    footer .text-center,
+    footer .text-md-start {
+        text-align: center !important;
+    }
+
+    footer .row>div {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    footer .text-uppercase {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .map-responsive iframe {
+        height: 200px;
+    }
+}
+
+/* Gaya Tambahan untuk Tampilan Mobile */
+@media (max-width: 480px) {
+    footer .fab {
+        font-size: 18px;
+    }
+
+    footer .text-muted {
+        font-size: 14px;
+    }
+
+    footer .footer-logo {
+        height: 30px;
+    }
+
+    footer .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

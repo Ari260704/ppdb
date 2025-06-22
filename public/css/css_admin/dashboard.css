@@ -1,0 +1,60 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    padding: 2rem;
+    flex-grow: 1;
+    background-color: #f8f9fa;
+}
+
+.dashboard-box {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-box:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-box h5 {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-box h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-success th {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.badge.bg-success {
+    font-size: 0.875rem;
+    padding: 0.5em 1em;
+}
+
+.badge.bg-warning {
+    font-size: 0.875rem;
+    padding: 0.5em 1em;
+}
+
+h3, h5 {
+    font-weight: 600;
+}
+
+

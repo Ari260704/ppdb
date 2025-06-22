@@ -1,0 +1,260 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
+
+/* Body Styling */
+body {
+    background: #f3f3f3 url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Custom */
+.navbar-custom {
+    background-color: #f3f3f3;
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 60px;
+}
+
+.navbar-custom .brand-text {
+    line-height: 1.1;
+}
+
+.navbar-custom .brand-text div:first-child {
+    color: rgb(29, 190, 56);
+    font-weight: bold;
+}
+
+.navbar-custom .brand-text div:last-child {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+    color: rgb(29, 190, 56) !important;
+    font-weight: bold;
+    padding: 0.5rem 12px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107 !important;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+/* end navbar */
+
+/* section guru */
+.guru-section {
+    background-color: #f3f3f3;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #14532d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.guru-card {
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.guru-card img {
+    height: 260px;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    padding: 10px;
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.guru-card .card-body {
+    padding: 15px;
+}
+
+.guru-card .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #14532d;
+}
+
+.guru-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Swiper Styling */
+.swiper {
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    width: 280px;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #198754;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    background-color: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #198754;
+}
+
+/* section guru */
+
+
+footer {
+    background-color: #f8f9fa;
+    color: #198754;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: #198754;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+footer .text-uppercase {
+    color: #14532d;
+    text-transform: uppercase;
+}
+
+footer .fab {
+    font-size: 20px;
+}
+
+footer .border-bottom {
+    border-color: #198754 !important;
+}
+
+footer .p-4 {
+    background-color: #e9f5ee;
+}
+
+footer .text-muted {
+    color: #14532d !important;
+}
+
+footer .bg-body-tertiary {
+    background-color: #f3f3f3 !important;
+}
+
+footer .fw-bold {
+    font-weight: 600;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Responsif iframe */
+.map-responsive iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/* Penyesuaian Responsif & Alignment */
+@media (max-width: 768px) {
+
+    footer .text-center,
+    footer .text-md-start {
+        text-align: center !important;
+    }
+
+    footer .row>div {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    footer .text-uppercase {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .map-responsive iframe {
+        height: 200px;
+    }
+}
+
+/* Gaya Tambahan untuk Tampilan Mobile */
+@media (max-width: 480px) {
+    footer .fab {
+        font-size: 18px;
+    }
+
+    footer .text-muted {
+        font-size: 14px;
+    }
+
+    footer .footer-logo {
+        height: 30px;
+    }
+
+    footer .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

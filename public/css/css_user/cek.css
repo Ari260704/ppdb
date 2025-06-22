@@ -1,0 +1,200 @@
+/* ===============================
+   RESET STYLES
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  /* ===============================
+     BODY
+  ================================= */
+  body {
+    background: #f3f3f3 url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* ===============================
+     NAVBAR CUSTOM
+  ================================= */
+  .navbar-custom {
+    background-color: #f3f3f3;
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  
+  .navbar-custom .navbar-brand img {
+    height: 60px;
+  }
+  
+  .navbar-custom .brand-text {
+    line-height: 1.1;
+  }
+  
+  .navbar-custom .brand-text div:first-child {
+    color: rgb(29, 190, 56);
+    font-weight: bold;
+  }
+  
+  .navbar-custom .brand-text div:last-child {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .navbar-custom .nav-link {
+    color: rgb(29, 190, 56) !important;
+    font-weight: bold;
+    padding: 0.5rem 12px;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #ffc107 !important;
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 1rem;
+  }
+  
+  /* ===============================
+     CEK STATUS PPDB
+  ================================= */
+  .cek-status-container {
+    max-width: 600px;
+    margin: 100px auto 80px auto; /* Atas, kanan, bawah, kiri */
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }  
+  
+  .status-result {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  /* ===============================
+     FOOTER
+  ================================= */
+  footer {
+    background-color: #f8f9fa;
+    color: #198754;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  footer a {
+    color: #198754;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+  }
+  
+  footer .text-uppercase {
+    color: #14532d;
+    text-transform: uppercase;
+  }
+  
+  footer .fab {
+    font-size: 20px;
+  }
+  
+  footer .border-bottom {
+    border-color: #198754 !important;
+  }
+  
+  footer .p-4 {
+    background-color: #e9f5ee;
+  }
+  
+  footer .text-muted {
+    color: #14532d !important;
+  }
+  
+  footer .bg-body-tertiary {
+    background-color: #f3f3f3 !important;
+  }
+  
+  footer .fw-bold {
+    font-weight: 600;
+  }
+  
+  .footer-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* ===============================
+     RESPONSIVE FOOTER
+  ================================= */
+  .map-responsive iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+  }
+  
+  @media (max-width: 768px) {
+    footer .text-center,
+    footer .text-md-start {
+      text-align: center !important;
+    }
+  
+    footer .row > div {
+      margin-bottom: 1.5rem;
+    }
+  
+    .footer-logo {
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+  
+    footer .text-uppercase {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .map-responsive iframe {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    footer .fab {
+      font-size: 18px;
+    }
+  
+    footer .text-muted {
+      font-size: 14px;
+    }
+  
+    footer .footer-logo {
+      height: 30px;
+    }
+  
+    footer .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+/* dashboard.css */
+
+/* Body umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* Sidebar */
+.sidebar {
+    border-right: 1px solid #dee2e6;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0c3d15;
+    transition: all 0.3s ease;
+}
+
+
+.sidebar a:hover {
+    background-color: #198754;
+    color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.sidebar hr {
+    margin: 5px 0;
+}
+
+/* Konten utama */
+.flex-grow-1 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive Search Input */
+.topbar input[type="text"] {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+}
+
+.topbar button {
+    margin-left: 5px;
+}
+
+/* Tambahan styling jika diperlukan */
+h1 {
+    color: #198754;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+

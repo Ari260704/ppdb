@@ -1,0 +1,173 @@
+/* Gaya Umum Admin */
+.admin-container {
+    padding: 20px;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+}
+
+/* Header */
+.admin-header {
+    margin-bottom: 30px;
+}
+
+.admin-header h1 {
+    color: #4e73df;
+    font-weight: 600;
+}
+
+/* Card */
+.admin-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    background-color: #fff;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-header h6 {
+    color: #4e73df;
+    font-weight: 600;
+}
+
+/* Tabel */
+.table-responsive {
+    overflow-x: auto;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dataTable th {
+    background-color: #f8f9fc;
+    color: #4e73df;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-bottom: 2px solid #e3e6f0;
+}
+
+#dataTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e3e6f0;
+    vertical-align: middle;
+}
+
+#dataTable tr:hover {
+    background-color: #f8f9fc;
+}
+
+/* Badge Status */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-warning {
+    background-color: #f6c23e;
+    color: #fff;
+}
+
+.badge-success {
+    background-color: #1cc88a;
+    color: #fff;
+}
+
+.badge-danger {
+    background-color: #e74a3b;
+    color: #fff;
+}
+
+/* Tombol */
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+
+.btn-secondary {
+    background-color: #858796;
+    border-color: #858796;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.modal-title {
+    color: #4e73df;
+    font-weight: 600;
+}
+
+/* Form */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #d1d3e2;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #bac8f3;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* Alert */
+.alert {
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Sidebar Navigation */
+.nav-item.active .nav-link {
+    color: #4e73df;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #d1d3e2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-link:hover {
+    color: #b7b9cc;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link i {
+    margin-right: 10px;
+}
