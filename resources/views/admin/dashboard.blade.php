@@ -28,27 +28,27 @@
 @endpush
 
 @section('content')
-
-<!-- Kartu Sambutan -->
-<div class="card border-0 shadow-sm mb-4">
-    <div class="card-body bg-light rounded">
-        <h5 class="mb-0 text-success fw-bold">
-            <i class="bi bi-house-door-fill me-2"></i>
-            SELAMAT DATANG | ADMIN MTs DARUL HIKMAH
-        </h5>
+    <!-- Kartu Sambutan -->
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body bg-light rounded">
+            <h5 class="mb-0 text-success fw-bold">
+                <i class="bi bi-house-door-fill me-2"></i>
+                SELAMAT DATANG | ADMIN MTs DARUL HIKMAH
+            </h5>
+        </div>
     </div>
-</div>
-<!-- Alert Peringatan -->
-<div class="alert alert-danger d-flex align-items-center shadow-sm" role="alert">
-    <i class="bi bi-exclamation-triangle-fill me-2 fs-5"></i>
+
+    <div class="main-content mt-4">
+        <h3 class="mb-4 fw-bold">Dashboard Admin</h3>
+
+        <!-- Alert Peringatan -->
+      <div class="alert alert-danger d-flex align-items-center py-2 px-3 small shadow-sm mb-3" role="alert" style="font-size: 0.85rem;">
+    <i class="bi bi-exclamation-triangle-fill me-2 fs-6"></i>
     <div>
         <strong>Perhatian:</strong> Jika <b>selesai</b>, mohon segera <b>logout</b>.
     </div>
 </div>
 
-
-    <div class="main-content mt-4">
-        <h3 class="mb-4 fw-bold">Dashboard Admin</h3>
 
         <!-- Info Boxes -->
         <div class="row g-4 mb-4">

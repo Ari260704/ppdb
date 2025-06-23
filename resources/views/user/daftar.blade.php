@@ -118,7 +118,7 @@
                         <i class="fas fa-id-badge fa-lg"></i>
                     </div>
                     <div class="text-section">
-                        <div class="title">BUKTI PENDAFTARAN</div>
+                        <div class="title">CEK PENDAFTARAN</div>
                         <a href="/cek" class="link">Klik Disini</a>
                     </div>
                 </div>

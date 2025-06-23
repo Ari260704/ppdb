@@ -30,14 +30,15 @@
     <div class="d-flex" style="min-height: 100vh;">
 
         <!-- Sidebar -->
-        <div class="sidebar d-flex flex-column justify-content-between p-3"
-            style="width: 250px; background: linear-gradient(#26be68) !important;">
+        <div class="sidebar d-flex flex-column justify-content-between p-3 shadow-sm"
+            style="width: 250px; background: linear-gradient(#26be68) !important; border-right: 1px solid #dee2e6;">
+
 
             <!-- Logo & Judul -->
             <div class="text-center py-4 border-bottom border-white">
                 <img src="{{ asset('images/logo_mts-removebg-preview.png') }}" alt="Logo MTs Darul Hikmah"
                     style="width: 70px; height: 70px; object-fit: contain;" class="mb-2 rounded">
-                <h5 class="text-white fw-bold m-0" style="font-size: 16px; letter-spacing: 1px;">ADMIN DARUL HIKMAH</h5>
+                <h5 class="text-white fw-bold m-0" style="font-size: 16px; letter-spacing: 1px;">MTS DARUL HIKMAH</h5>
             </div>
 
             <!-- Menu atas -->
@@ -83,9 +84,12 @@
         </div>
 
         <!-- Konten Utama -->
-        <div class="flex-grow-1 p-4">
-            @yield('content')
+        <div class="flex-grow-1 p-4" style="background-color: #f8f9fa;">
+            <div class="bg-white rounded shadow-sm p-4">
+                @yield('content')
+            </div>
         </div>
+
     </div>
 </body>
 
