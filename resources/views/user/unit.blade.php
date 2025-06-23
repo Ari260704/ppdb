@@ -73,7 +73,7 @@
                     <!-- Slide 1 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru 1.jpg') }}" class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}" class="card-img-top img-fluid"
                                 alt="Guru 1">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Amelia Sussena H., M.Pd</h5>
@@ -85,7 +85,7 @@
                     <!-- Slide 2 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru 2.jpeg') }}" class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}" class="card-img-top img-fluid"
                                 alt="Guru 2">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Supardi, S.Ag, M.Pd</h5>
@@ -96,7 +96,7 @@
                     <!-- Slide 3 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru 3.jpg') }}" class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}" class="card-img-top img-fluid"
                                 alt="Guru 2">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Supardi, S.Ag, M.Pd</h5>
@@ -107,7 +107,7 @@
                     <!-- Slide 4 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru 4.jpeg') }}"class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}"class="card-img-top img-fluid"
                                 alt="Guru 2">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Supardi, S.Ag, M.Pd</h5>
@@ -118,7 +118,7 @@
                     <!-- Slide 5 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru 5.JPG') }}" class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}" class="card-img-top img-fluid"
                                 alt="Guru 2">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Supardi, S.Ag, M.Pd</h5>
@@ -129,7 +129,7 @@
                     <!-- Slide 6 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru6.JPG') }}" class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}"class="card-img-top img-fluid"
                                 alt="Guru 2">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Supardi, S.Ag, M.Pd</h5>
@@ -140,7 +140,7 @@
                     <!-- Slide 7 -->
                     <div class="swiper-slide text-center">
                         <div class="card border-0 shadow-sm p-3">
-                            <img src="{{ asset('images/guru 7.JPG') }}" class="card-img-top img-fluid"
+                            <img src="{{ asset('images/profile.jpg') }}" class="card-img-top img-fluid"
                                 alt="Guru 2">
                             <div class="card-body">
                                 <h5 class="card-title text-success fw-bold">Supardi, S.Ag, M.Pd</h5>
