@@ -1,34 +1,78 @@
 @extends('admin.layout')
-@section('content')
-    <!-- Main Content -->
-    <div class="main-content mt-4">
-        <h3 class="mb-4">Dashboard</h3>
+@push('styles')
+<style>
+    .dashboard-box {
+        transition: 0.3s;
+    }
+    .dashboard-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    }
+    table.table-hover tbody tr:hover {
+        background-color: #11ce00;
+    }
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="dashboard-box text-center border-start border-success border-5">
-                    <h5>Total Pendaftar</h5>
-                    <h2>{{ $totalPendaftar }}</h2>
-                </div>
+     .icon-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>
+@endpush
+
+@section('content')
+<div class="main-content mt-4">
+    <h3 class="mb-4 fw-bold">Dashboard Admin</h3>
+
+    <!-- Info Boxes -->
+ <div class="row g-4">
+    <div class="col-md-4">
+        <div class="dashboard-box p-4 rounded shadow-sm d-flex align-items-center bg-light border-start border-success border-5">
+            <div class="icon-circle bg-success text-white me-3">
+                <i class="fas fa-users fa-lg"></i>
             </div>
-            <div class="col-md-4">
-                <div class="dashboard-box text-center border-start border-warning border-5">
-                    <h5>Sudah Diverifikasi</h5>
-                    <h2>{{ $sudahDiverifikasi }}</h2>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="dashboard-box text-center border-start border-danger border-5">
-                    <h5>Belum Diverifikasi</h5>
-                    <h2>{{ $belumDiverifikasi }}</h2>
-                </div>
+            <div>
+                <h6 class="text-muted mb-1">Total Pendaftar</h6>
+                <h2 class="text-success mb-0">{{ $totalPendaftar }}</h2>
             </div>
         </div>
+    </div>
+    <div class="col-md-4">
+        <div class="dashboard-box p-4 rounded shadow-sm d-flex align-items-center bg-light border-start border-warning border-5">
+            <div class="icon-circle bg-warning text-white me-3">
+                <i class="fas fa-user-check fa-lg"></i>
+            </div>
+            <div>
+                <h6 class="text-muted mb-1">Sudah Diverifikasi</h6>
+                <h2 class="text-warning mb-0">{{ $sudahDiverifikasi }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="dashboard-box p-4 rounded shadow-sm d-flex align-items-center bg-light border-start border-danger border-5">
+            <div class="icon-circle bg-danger text-white me-3">
+                <i class="fas fa-user-clock fa-lg"></i>
+            </div>
+            <div>
+                <h6 class="text-muted mb-1">Belum Diverifikasi</h6>
+                <h2 class="text-danger mb-0">{{ $belumDiverifikasi }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <div class="mt-5">
-            <h5>Aktivitas Terbaru</h5>
-            <table class="table table-bordered mt-3">
-                <thead class="table-success">
+
+    <!-- Aktivitas Terbaru -->
+    <div class="mt-5">
+        <h5 class="fw-bold mb-3">Aktivitas Terbaru</h5>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle shadow-sm bg-white">
+                <thead class="table-success text-white" style="background-color: #198754;">
                     <tr>
                         <th>No</th>
                         <th>Nama</th>
@@ -37,24 +81,32 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($aktivitasTerbaru as $key => $item)
+                    @forelse ($aktivitasTerbaru as $key => $item)
                         <tr>
                             <td>{{ $key + 1 }}</td>
-                            <td>{{ $item->nama}}</td> <!-- Sesuaikan dengan kolom di database -->
+                            <td>{{ $item->nama }}</td>
                             <td>{{ $item->created_at->format('d M Y') }}</td>
                             <td>
-                                @if ($item->status_siswa == 'terima')
-                                    <span class="badge bg-success"> Di Terima</span>
-                                @elseif($item->status_siswa == 'tidak terima')
-                                    <span class="badge bg-danger">Tidak Di Terima</span>
-                                @elseif($item->status_siswa == 'Belum DiVerifikasi')
-                                    <span class="badge bg-warning">Belum DiVerifikasi</span>
+                                @php
+                                    $status = strtolower($item->status_siswa);
+                                @endphp
+                                @if ($status == 'terima')
+                                    <span class="badge bg-success px-3 py-2">Diterima</span>
+                                @elseif ($status == 'tidak terima')
+                                    <span class="badge bg-danger px-3 py-2">Tidak Diterima</span>
+                                @else
+                                    <span class="badge bg-warning text-dark px-3 py-2">Belum Diverifikasi</span>
                                 @endif
                             </td>
                         </tr>
-                    @endforeach
+                    @empty
+                        <tr>
+                            <td colspan="4" class="text-center text-muted">Belum ada aktivitas terbaru.</td>
+                        </tr>
+                    @endforelse
                 </tbody>
             </table>
         </div>
     </div>
+</div>
 @endsection

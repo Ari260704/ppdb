@@ -100,8 +100,9 @@
     </nav>
     <!-- end navbar -->
     <!-- Header -->
-    <div class="container ">
-        <div class="card shadow text-center text-dark bg-gradient-card">
+     <div class="container">
+        <div class="card shadow text-center text-dark bg-gradient-card"
+            style="background: linear-gradient(to bottom,  #f3f3f3 , #b7e6cb) !important;">
             <div class="card-body py-4">
                 <h2 class="fw-bold text-uppercase text-success mb-4">Penerimaan Peserta Didik Baru 2025/2026</h2>
 
@@ -116,7 +117,6 @@
             </div>
         </div>
     </div>
-
     {{-- end header --}}
 
     <!-- Shortcut Menu PPDB -->
