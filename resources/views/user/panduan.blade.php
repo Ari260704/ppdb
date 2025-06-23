@@ -34,22 +34,20 @@
                     <p>{{ $pengumuman->isi }}</p>
 
                     <ul class="list-unstyled">
-                        <li>📧 halobpom@pom.go.id</li>
-                        <li>📞 +6221 4244691 / +6221 42883309 / +6221 42883462</li>
-                        <li>☎️ +6221 4263333</li>
-                        <li>📱 +6281 1918 1533</li>
+                        <li>📧 Email: ppdb@mtsdarulhikmah.sch.id</li>
+                        <li>📞 WA: 08xx-xxxx-xxxx (Panitia PPDB)</li>
+                        <li>📍 Alamat:  Jl. H. Terin No.15A, Pangkalan Jati Baru, Kec. Cinere, Kota Depok, Jawa Barat 16514</li>
                     </ul>
 
                     <hr>
 
                     <div class="d-flex justify-content-around text-center">
                         <div>
-                            <div>🐦 @bpom_ri</div>
-                            <div>📷 @BPOM_RI</div>
+                            <div>🐦 @mts_darulhikmah</div>
+                            <div>📷 @mts_darulhikmah</div>
                         </div>
                         <div>
-                            <div>📺 bpom.official</div>
-                            <div>🔗 <a href="https://linktr.ee/bpom_ri" target="_blank">linktr.ee/bpom_ri</a></div>
+                            <div>📺 mts_darulhikmah.official</div>
                         </div>
                     </div>
                 </div>

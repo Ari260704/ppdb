@@ -42,7 +42,7 @@ class PanduanController extends Controller
         return redirect()->back()->with('success', 'Pengumuman berhasil disimpan!');
 
         Pengumuman::create($data);
-        return redirect()->route('admin.pengumuman.index')->with('success', 'Berita berhasil ditambahkan');
+        return redirect()->route('admin.create')->with('success', 'Berita berhasil ditambahkan');
     }
 
     public function edit(Pengumuman $pengumuman)
@@ -70,7 +70,6 @@ class PanduanController extends Controller
 
     public function destroy(Pengumuman $pengumuman)
     {
-
         $pengumuman->delete();
         return redirect()->route('admin.pengumuman.index')->with('success', 'Berita berhasil dihapus');
     }
